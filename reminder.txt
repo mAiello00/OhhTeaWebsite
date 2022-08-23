@@ -1,0 +1,16 @@
+Grid System:
+div class="container-fluid"
+	- use the whole width available on the screen
+
+div class="container border"
+	- shows the border around the container
+
+can have a col within a row and size it: ie) class="col-3"
+
+use a row within an continer and wrap the card in it for the "choose your tea type" section
+colums size wil determine the size of the card
+
+or in the container do <div class="card" style="width: ~rem" 
+
+
+<img class="img-fluid"> makes an image responsive
