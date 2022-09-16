@@ -1,0 +1,212 @@
+/*Navbar*/
+.custom-nav-dropdown
+{
+    list-style: none;
+    letter-spacing: 0.05vw;
+}
+#sale-Custom-Dropdown
+{
+    color: red;
+}
+
+.custom-nav-dropdown-link, .custom-nav-dropdown-link:hover
+{
+    text-decoration: none;
+    color: black;
+
+}
+
+#OhhTeaLogo
+{
+    text-align: center;
+    margin-top: 1%;
+}
+
+.navbar-icons-wrapper
+{
+    text-align: right;
+}
+
+.navbar-icon-picture
+{
+    margin-top: 5%;
+    height: 16px;
+    width: 16px;
+}
+/*Navbar*/
+
+.top-picks-button
+{
+    background-color: black;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 70%;
+}
+
+.top-picks-cards-wrapper
+{
+    display: flex;
+}
+
+.get-inspired-cards-wrapper
+{
+    display: flex;
+}
+
+.tri-carousel-card
+{
+    margin: 0 .5em;
+    width: calc(100%/3);
+    border: none;
+    background: transparent;
+}
+
+
+.choose-your-tea-card
+{
+    margin: auto;
+    width: calc(100%/9);
+    margin: 1vw;
+}
+
+.carousel-card-image-wrapper
+{
+    height: 22vw;
+    /*margin: 0 auto;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-card-image-wrapper img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-carousel-text
+{
+    text-align: center;
+}
+
+.choose-your-tea-cards-wrapper
+{
+    display: flex;
+    height: 20vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-choose-your-tea-text
+{
+    text-align: center;
+}
+
+.choose-tea-button
+{
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.choose-tea-button:hover
+{
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.card-img-top
+{
+    border-radius: 5%;
+}
+
+.treat-your-inbox-wrapper
+{
+    background-color: #d0e4ff;
+    text-align: center;
+}
+
+.spacer
+{
+    padding-top: 3%;
+}
+
+.footer-list
+{
+    list-style: none;
+}
+
+.footer-element-text, .footer-element-text:hover 
+{
+    text-decoration: none;
+    color: black;
+}
+
+/*Fav Tea*/
+.fav-tea-title
+{
+    font-size: xx-large;
+    padding-bottom: 5vw;
+}
+
+.fav-tea-button
+{
+    font-size: larger;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    background-color: whitesmoke;
+}
+
+.fav-tea-button:hover
+{
+    background-color: whitesmoke;
+    color: black;
+    
+}
+/*Fav Tea*/
+
+/*Tea Quiz*/
+.quiz-question-one
+{
+    display: none;
+}
+.quiz-question-two
+{
+    display: none;
+}
+.quiz-question-three
+{
+    display: none;
+}
+.quiz-question-four
+{
+    display: none;
+}
+.quiz-question-five
+{
+    display: none;
+}
+.quiz-question-six
+{
+    display: none;
+}
+
+.quiz-questions-text
+{
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.quiz-question-button, .quiz-question-button:hover, .quiz-question-button:active
+{
+    background-color: aliceblue;
+    color: black;
+    width: 50%;
+    letter-spacing: 5px;
+    margin-bottom: 2vw;
+}

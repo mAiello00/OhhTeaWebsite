@@ -6,17 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhhTeaOfficial</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="customcss/customcss.css">
+    <link rel="stylesheet" href="">
+    <script type="text/javascript" src="customjs/quiz-page.js"></script>
 </head>
-<body>
-    <header>
-        <!--Navbar One-->
-    <nav class="navbar navbar-expand-lg bg-light">
+<body style="background-color: white; max-width: 100%; overflow-x: hidden;">
+  <header>
+
+    <!--Navbar One-->
+    <div class="container-fluid nav-one-container">
+      <div class="row">
+        <div class="col">
+          <nav class="navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle Navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <ul class="custom-nav-dropdown">
+              <li>
+                <a class="custom-nav-dropdown-link" id="sale-Custom-Dropdown" href="#">Sale</a>
+              </li>
+              <li>
+                <a class="custom-nav-dropdown-link" href="#">Tea</a>
+              </li>
+              <li>
+                <a class="custom-nav-dropdown-link" href="#">Sweeterners</a>
+              </li>
+              <li>
+                <a class="custom-nav-dropdown-link" href="#">Matcha</a>
+              </li>
+              <li>
+                <a class="custom-nav-dropdown-link" href="#">Wellness</a>
+              </li>
+              <li>
+                <a class="custom-nav-dropdown-link" href="#">Accessories</a>
+              </li>
+              <li>
+                <a class="custom-nav-dropdown-link" href="#">Bundles</a>
+              </li>
+              <li>
+                <a class="custom-nav-dropdown-link" href="#">Gifts</a>
+              </li>
+              <li>
+                <a class="custom-nav-dropdown-link" href="#">TeaQuiz</a>
+              </li>
+              <li>
+                <a class="custom-nav-dropdown-link" href="#">Subscription</a>
+              </li>
+              <li>
+                <a class="custom-nav-dropdown-link" href="#">How To Make...</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="p" id="OhhTeaLogo">OHH TEA</div>
+        </div>
+        <div class="col navbar-icons-wrapper">
+          <i>
+            <a href="#">
+              <img src="img/magnifying-glass-solid.svg" alt="" class="navbar-icon-picture">
+            </a>
+          </i>
+          <i>
+            <a href="#">
+              <img src="img/user-solid.svg" alt="" class="navbar-icon-picture">
+            </a>
+          </i>
+          <i>
+            <a href="#">
+              <img src="img/heart-solid.svg" alt="" class="navbar-icon-picture">
+            </a>
+          </i>
+          <i>
+            <a href="#">
+              <img src="img/cart-shopping-solid.svg" alt="" class="navbar-icon-picture">
+            </a>
+          </i>    
+        </div>
+      </div>
+    </div>
+
+    <!--Navbar Two-->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#" style="color: red">Sale</a>
               </li>
@@ -51,10 +130,6 @@
                 <a class="nav-link active" href="#">How To Make...</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -62,30 +137,34 @@
 
     <main>
 
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+
         <!--Main Carousel-->
         <div class="container">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="2000">
+                <div class="carousel-inner main-carousel-image-wrapper">
+                  <div class="carousel-item active" data-bs-interval="7000">
                     <img src="img/one.png" class="d-block w-100" alt="cOne">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>First slide label</h5>
                       <p>Some representative placeholder content for the first slide.</p>
                     </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="2000">
+                  <div class="carousel-item" data-bs-interval="7000">
                     <img src="img/two.png" class="d-block w-100" alt="cTwo">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Second slide label</h5>
                       <p>Some representative placeholder content for the second slide.</p>
                     </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="2000">
+                  <div class="carousel-item" data-bs-interval="7000">
                     <img src="img/three.png" class="d-block w-100" alt="cThree">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Third slide label</h5>
@@ -93,87 +172,609 @@
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
         </div>
 
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+
         <!--Choose Your Tea-->
         <div class="container my-5">
             
-            <p class="text-center">CHOOSE YOUR TYPE OF TEA</p>
-
-            <div class="row no-gutters">
-                <div class="col">
-                    <div class="card" style="width: 9rem;">
-                        <img src="img/overhead-tea-temp.jpg" class="card-img-top" alt="teaTempOne">
-                        <div class="card-body text-center">
-                          <p class="card-text"></p>
-                          <a href="#" class="btn btn-primary">Black</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 9rem;">
-                        <div class="card-body text-center">
-                          <p class="card-text"></p>
-                          <a href="#" class="btn btn-primary">White</a>
-                        </div>
-                        <img src="img/overhead-tea-temp.jpg" class="card-img-top" alt="teaTempTwo">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 9rem;">
-                        <img src="img/overhead-tea-temp.jpg" class="card-img-top" alt="teaTempThree">
-                        <div class="card-body text-center">
-                          <p class="card-text"></p>
-                          <a href="#" class="btn btn-primary">Floral</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 9rem;">                        
-                        <div class="card-body text-center">
-                          <p class="card-text"></p>
-                          <a href="#" class="btn btn-primary">Matcha</a>
-                        </div>
-                        <img src="img/overhead-tea-temp.jpg" class="card-img-top" alt="teaTempFour">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 9rem;">
-                        <img src="img/overhead-tea-temp.jpg" class="card-img-top" alt="teaTempFive">
-                        <div class="card-body text-center">
-                          <p class="card-text"></p>
-                          <a href="#" class="btn btn-primary text-center">Oolong</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 9rem;">
-                        <div class="card-body text-center">
-                          <p class="card-text"></p>
-                          <a href="#" class="btn btn-primary">Green</a>
-                        </div>
-                        <img src="img/overhead-tea-temp.jpg" class="card-img-top" alt="teaTempSix">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 9rem;">
-                        <img src="img/overhead-tea-temp.jpg" class="card-img-top" alt="teaTempSeven">
-                        <div class="card-body text-center">
-                          <p class="card-text"></p>
-                          <a href="#" class="btn btn-primary">Rooibos</a>
-                        </div>
-                    </div>
-                </div>
+          <p class="text-center">CHOOSE YOUR TYPE OF TEA</p>
+          <div class="choose-your-tea-cards-wrapper">
+            <div class="card card-choose-your-tea-text choose-your-tea-card">
+              <img src="..." class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary choose-tea-button">Black</a>
+              </div>
             </div>
+            <div class="card card-choose-your-tea-text choose-your-tea-card">
+              <img src="..." class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary choose-tea-button">White</a>
+              </div>
+            </div>
+            <div class="card card-choose-your-tea-text choose-your-tea-card">
+              <img src="..." class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary choose-tea-button">Floral</a>
+              </div>
+            </div>
+            <div class="card card-choose-your-tea-text choose-your-tea-card">
+              <img src="..." class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary choose-tea-button">Herbal</a>
+              </div>
+            </div>
+            <div class="card card-choose-your-tea-text choose-your-tea-card">
+              <img src="..." class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary choose-tea-button">Matcha</a>
+              </div>
+            </div>
+            <div class="card card-choose-your-tea-text choose-your-tea-card">
+              <img src="..." class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary choose-tea-button">Oolong</a>
+              </div>
+            </div>
+            <div class="card card-choose-your-tea-text choose-your-tea-card">
+              <img src="..." class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary choose-tea-button">Green</a>
+              </div>
+            </div>
+            <div class="card card-choose-your-tea-text choose-your-tea-card">
+              <img src="..." class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary choose-tea-button">Rooibos</a>
+              </div>
+            </div>
+            <div class="card card-choose-your-tea-text choose-your-tea-card">
+              <img src="..." class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary choose-tea-button">Temp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+
+        <!--Browse By Category-->
+        <div class="contianer my-1" style="background-color: #d0e4ff">
+          <p class="text-center" style="padding-top: 2%;">BROWSE BY CATEGORY</p>
+
+          <div class="row row-cols-2">
+            <div class="col text-center">
+              <a type="button" class="btn rounded-pill btn-lg top-picks-button" href="category-caffine-free.html">CAFFINE FREE</a>
+            </div>
+            <div class="col text-center">
+              <a type="button" class="btn rounded-pill btn-lg top-picks-button" href="#">BUNDLES</a>
+            </div>
+            <div class="col text-center">
+              <a type="button" class="btn rounded-pill btn-lg top-picks-button" href="#">ORGANIC</a>
+            </div>
+            <div class="col text-center">
+              <a type="button" class="btn rounded-pill btn-lg top-picks-button" href="#">TEAWARE</a>
+            </div>
+            <div class="col text-center">
+              <a type="button" class="btn rounded-pill btn-lg top-picks-button" href="#">SEASON</a>
+            </div>
+            <div class="col text-center">
+              <a type="button" class="btn rounded-pill btn-lg top-picks-button" href="#">GIFTS</a>
+            </div>
+          </div>
+          
+          <div class="spacer"></div>
+          
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+
+        <!--Our Top Picks-->
+        <p style="text-align: center;">OUR TOP PICKS</p>
+        <div id="topPicksCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="top-picks-cards-wrapper">
+                <div class="card card-carousel-text tri-carousel-card" >
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/plantone.jpg">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#"  class="btn rounded-pill border-dark card-carousel-button">ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/planttwo.jpg">
+                  </div>    
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn rounded-pill border-dark card-carousel-button">ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/plantthree.jpg">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn rounded-pill border-dark card-carousel-button">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="carousel-item">
+              <div class="top-picks-cards-wrapper">
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/plantfour.png">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn rounded-pill border-dark card-carousel-button">ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/plantfive.png">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn rounded-pill border-dark card-carousel-button">ADD TO CART</a>
+                  </div>
+                </div>
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/plantsix.png">
+                  </div> 
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn rounded-pill border-dark card-carousel-button">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <a class="carousel-control-prev" href="#topPicksCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#topPicksCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+
+        <!--Find Your Fav Tea-->
+        <div class="container-fluid my-4" style="padding-top: 2%; background-color: #e6f6ec; padding-bottom: 2%;">
+          <p class="text-center fav-tea-title">FIND YOUR FAV TEA</p>
+          <div class="d-grid gap-2 col-2 mx-auto">
+            <a href="#quiz-question-one-anchor">
+             <button type="button" class="btn rounded-pill fav-tea-button" id="quiz-page-button" onclick="displayQuizQuestion()">TAKE QUIZ HERE</button>
+            </a>
+          </div>
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <p class="text-center my-1">15% off all Subscriptions</p>
+          <p class="text-center" style="margin-top: 0;">Free shipping on all CAD order over $50</p>
+
+          <div class="quiz-question-one quiz-questions" id="quiz-question-one-anchor">
+            <h5 class="quiz-questions-text">HOW DO YOU BREW YOUR TEA?</h5>
+            <div class="row row-cols-3 text-center">
+              <div class="col">
+                <a href="#quiz-question-two-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="loose-leaf-question-main" onclick="displayQuizQuestion()">LOOSE LEAF</button>
+                </a>
+              </div>
+              <div class="col">
+                <h3>OR</h3>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-two-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="bagged-question-main" onclick="displayQuizQuestion()">BAGGED</button>
+                </a>
+              </div>
+            </div>
+          </div>  
+          <div class="quiz-question-two quiz-questions" id="quiz-question-two-anchor">
+            <h5 class="quiz-questions-text">HOW DO YOU LIKE YOUR TEA?</h5>
+            <div class="row row-cols-2 text-center">
+              <div class="col">
+                <a href="#quiz-question-three-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="fancy-question-main" onclick="displayQuizQuestion()">GOTTA LOOK FANCY</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-three-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="milk-and-sugar-question-main" onclick="displayQuizQuestion()">MILK AND SUGAR</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-three-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="hot-question-main" onclick="displayQuizQuestion()">HOT HOT HOT</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-three-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="black-question-main" onclick="displayQuizQuestion()">BLACK. NOTHING ELSE</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-three-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="hoey-and-lemon-question-main" onclick="displayQuizQuestion()">HONEY AND LEMON</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-three-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="cold-question-main" onclick="displayQuizQuestion()">ICE COLD PLEASE!</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-question-three quiz-questions" id="quiz-question-three-anchor">
+            <h5 class="quiz-questions-text">CAFFINE LEVEL?</h5>
+            <div class="row row-cols-2 text-center">
+              <div class="col">
+                <a href="#quiz-question-four-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="caffine-free-question-main" onclick="displayQuizQuestion()">CAFFINE FREE</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-four-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="low-caffine-question-main" onclick="displayQuizQuestion()">LOW CAFFINE</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-four-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="high-caffine-question-main" onclick="displayQuizQuestion()">HIGH CAFFINE</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-four-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="all-caffine-main" onclick="displayQuizQuestion()">LOVE THEM ALL!</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-question-four quiz-questions" id="quiz-question-four-anchor">
+            <h5 class="quiz-questions-text">HOW SHOULD YOUR TEA TASTE?</h5>
+            <div class="row row-cols-2 text-center">
+              <div class="col">
+                <a href="#quiz-question-five-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="fruity-question-main" onclick="displayQuizQuestion()">FRUITY</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-five-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="floral-question-main" onclick="displayQuizQuestion()">FLORAL</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-five-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="sweet-question-main" onclick="displayQuizQuestion()">SWEET</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-five-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="traditional-question-main" onclick="displayQuizQuestion()">TRADITIONAL</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-five-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="spiced-question-main" onclick="displayQuizQuestion()">SPICED</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-five-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="natural-question-main" onclick="displayQuizQuestion()">NATURAL</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-question-five quiz-questions" id="quiz-question-five-anchor">
+            <h5 class="quiz-questions-text">WHY DO YOU DRINK YOUR TEA?</h5>
+            <div class="row row-cols-2 text-center">
+              <div class="col">
+                <a href="#quiz-question-six-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="tast-question-main" onclick="displayQuizQuestion()">FOR THE TASTE</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-six-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="wellness-question-main" onclick="displayQuizQuestion()">FOR WELLNESS</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-six-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="energy-question-main" onclick="displayQuizQuestion()">FOR ENERGY</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-six-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="calm-question-main" onclick="displayQuizQuestion()">TO CALM DOWN</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-six-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="sleep-question-main" onclick="displayQuizQuestion()">TO SLEEP</button>
+                </a>
+              </div>
+              <div class="col">
+                <a href="#quiz-question-six-anchor">
+                  <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="detox-question-main" onclick="displayQuizQuestion()">TO DETOX/DIGEST</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="quiz-question-six quiz-questions" id="quiz-question-six-anchor">
+            <h5 class="quiz-questions-text">WHAT'S</h5>
+            <div class="row row-cols-3 text-center">
+              <div class="col">
+                <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="taste-two-question-main">FOR THE TASTE</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="wellness-two-question-main">FOR WELLNESS</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn rounded-pill quiz-question-button" href="#" id="energy-two-question-main">FOR ENERGY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+
+        <!--Get Inspired-->
+        <p style="text-align: center;">GET INSPIRED</p>
+        <div id="getInspiredCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="get-inspired-cards-wrapper">
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/plantone.jpg">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#"  class="btn rounded-pill border-dark card-carousel-button">WATCH NOW</a>
+                  </div>
+                </div>
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/planttwo.jpg">
+                  </div>    
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn rounded-pill border-dark card-carousel-button">WATCH NOW</a>
+                  </div>
+                </div>
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/plantthree.jpg">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn rounded-pill border-dark card-carousel-button">WATCH NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="carousel-item">
+              <div class="get-inspired-cards-wrapper">
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/plantfour.png">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn rounded-pill border-dark card-carousel-button">WATCH NOW</a>
+                  </div>
+                </div>
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/plantfive.png">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn rounded-pill border-dark card-carousel-button">WATCH NOW</a>
+                  </div>
+                </div>
+                <div class="card card-carousel-text tri-carousel-card">
+                  <div class="carousel-card-image-wrapper">
+                    <img class="card-img-top" src="img/plantsix.png">
+                  </div> 
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn rounded-pill border-dark card-carousel-button">WATCH NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <a class="carousel-control-prev" href="#getInspiredCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#getInspiredCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+
+        <!--Our Sustainable Tea-->
+        <div class="container-fluid"  style="padding-top: 2%; background-color: #e6f6ec; padding-bottom: 2%;">
+          <p class="text-center">OUR SUSTAINABLE TEA</p>
+
+          <div class="card-group">
+            <div class="card bg-transparent border-0">
+              <img src="img/one.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">RESPONSIBELY MADE</h5>
+                <p class="card-text">All products are made responsibely and ethically, ensuring the best possibly standards and labour practices</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card bg-transparent border-0">
+              <img src="img/two.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">SUSTAINABLY PACKAGED</h5>
+                <p class="card-text">We try to include as many environmentally friendly materials as possible, without degrading our products</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card bg-transparent border-0">
+              <img src="img/three.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">SUSTAINABLY SOURCED</h5>
+                <p class="card-text">All products listed are carefully sourced, making sure everything we share with you is premium quality</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+
+        <!--Treat Your Inbox-->
+        <div class="container-fluid treat-your-inbox-wrapper">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="row">
+            <div class="col">
+              <p>DON'T BE SHY...<br>TREAT YOUR INBOX</p>
+            </div>
+            <div class="col">
+              
+              <div class="input-group">
+                <input class="form-control py-2 rounded-pill mr-1 pr-5" type="search" placeholder="Your email goes here">
+                <span class="input-group-append">
+                    <button class="btn rounded-pill border-0 ml-n5" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+              </div>
+
+              <p>Receive our newsletter on the latest deals <br> and happenings + get 10% off your first <br> order.</p>
+            </div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------------------------------------>
+
+        <!--Footer-->
+        <div class="container-fluid">
+          <div class="row row-cols-4">
+            <div class="col">
+              <h6>BRAND INFO</h6>
+              <ul class="footer-list">
+                <li>
+                  <a class="footer-element-text" href="#">About Us</a>
+                </li>
+                <li>
+                  <a class="footer-element-text" href="#">Sustainability</a>
+                </li>
+                <li>
+                  <a class="footer-element-text" href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="footer-element-text" href="#">Terms and Conditions</a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="col">
+              <h6>CUSTOMER SUPPORT</h6>
+              <ul class="footer-list">
+                <li>
+                  <a class="footer-element-text" href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a class="footer-element-text" href="#">FAQs</a>
+                </li>
+                <li>
+                  <a class="footer-element-text" href="#">Returns and Exchanges</a>
+                </li>
+                <li>
+                  <a class="footer-element-text" href="#">Shipping and Handling</a>
+                </li>
+                <li>
+                  <a class="footer-element-text" href="#">Terms of Sale</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h6>ACCOUNT HELP</h6>
+              <ul class="footer-list">
+                <li>
+                  <a class="footer-element-text" href="#">Create an Account</a>
+                </li>
+                <li>
+                  <a class="footer-element-text" href="#">Sign In</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul></ul>
+            </div>
+          </div>
         </div>
 
     </main>

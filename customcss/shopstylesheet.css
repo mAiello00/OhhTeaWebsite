@@ -1,0 +1,51 @@
+.black-tea
+{
+    display: none;
+}
+
+.white-tea
+{
+    display: none;
+}
+
+.floral-tea
+{
+    display: none;
+}
+
+.herbal-tea
+{
+    display: none;
+}
+
+.matcha-tea
+{
+    display: none;
+}
+
+.oolong-tea
+{
+    display: none;
+}
+
+.green-tea
+{
+    display: none;
+}
+
+.rooibos-tea
+{
+    display: none;
+}
+
+.shop-item
+{
+}
+
+.card
+{
+    width: 25%;
+    margin: auto;
+    margin-bottom: 3vw;
+    width: 18rem;
+}
