@@ -1,0 +1,1 @@
+INSERT INTO products (productsName, productType, productImageSource, productPrice, productDescription, caffineLevel, size) VALUES ('CEREMONIAL MATCHA', 'MATCHA', '../img/shopPageImages/tempShopImage.jpg', 19.99, 'temporary product description', 3, 'small');

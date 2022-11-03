@@ -1,0 +1,7 @@
+more padding atthe top and bottom of the dropdown menu
+get inspired links to the instagram page 
+
+
+Make it so that each link that directs to a shop page passes in the tye of filter
+that you will be using to a javascript funnction so that it is possible to
+query the database properly and display what was requested

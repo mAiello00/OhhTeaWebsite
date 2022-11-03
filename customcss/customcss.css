@@ -1,49 +1,301 @@
-/*Navbar*/
-.custom-nav-dropdown
+/*Main Carousel Fluid*/
+.container-fluid
 {
-    list-style: none;
-    letter-spacing: 0.05vw;
-}
-#sale-Custom-Dropdown
-{
-    color: red;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.custom-nav-dropdown-link, .custom-nav-dropdown-link:hover
+.main-carousel-image
 {
-    text-decoration: none;
+    padding-top: 0;
+    margin-top: 0;
+    height: 43.25vw;
+    overflow: hidden;
+}
+
+.main-carousel-image-title
+{
+    z-index: 1;
+    position: absolute;
+    top: -1150%;
+    left: -15%;
+    bottom: 0;
+    right: 0;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 64px;
+    text-align: justify;
+    text-justify: inter-word;
     color: black;
 
 }
 
-#OhhTeaLogo
+.main-carousel-image-text
 {
+    z-index: 1;
+    position: absolute;
+    top: -500%;
+    bottom: 0;
+    left: -15%;
+    right: 0;
+    text-align: justify;
+    text-justify: inter-word;
+    color: black;
+}
+
+.main-carousel-image-button
+{
+    position: absolute;
+    z-index: 1;
+    top: -200%;
+    left: -15%;
+    background-color: white;
+    color: black;
+}
+
+.main-carousel-image-button:hover
+{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 991px)
+{
+    .large-main-carousel
+    {
+        display: none;
+    }
+
+    .carousel-item
+    {
+        height: 1000%;
+    }
+
+    .main-carousel-image
+    {
+        padding-top: 0;
+        margin-top: 0;
+        height: 400px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .small-main-carousel
+    {
+        display: none;
+    }
+}
+
+/*Main Carousel Fluid*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Choose Your Tea*/
+.choose-your-tea-text
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding-top: 2%;
+}
+
+@media screen and (min-width: 992px)
+{
+    .choose-your-tea-card
+    {
+        margin: auto;
+        width: calc(100%/9);
+        margin: 1vw;
+        border: none;
+        background: transparent;
+    }
+
+    .choose-your-tea-image
+    {
+        text-align: center;
+        justify-content: center;
+        max-width: 128px;
+        max-height:128px;
+        border-radius: 50%;
+    }
+
+    .choose-your-tea-cards-wrapper
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-choose-your-tea-text
+    {
+        text-align: center;
+    }
+    
+    .choose-tea-button, .choose-tea-button:active, .choose-tea-button:focus
+    {
+        background-color: transparent;
+        border: none;
+        color: black;
+        text-decoration: underline;
+        font-style: italic;
+        border-style: none;
+        box-shadow: none;
+    }
+    
+    .choose-tea-button:hover
+    {
+        background-color: transparent;
+        border: none;
+        color: black;
+    }
+    
+    .choose-your-tea-down
+    {
+        padding-top: 10%;   
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .choose-your-tea-card
+    {
+        margin: auto;
+        border: none;
+        background: transparent;
+    }
+
+    .choose-your-tea-image
+    {
+        text-align: center;
+        justify-content: center;
+        max-width: 128px;
+        min-width: 128px;
+        border-radius: 50%;
+    }
+
+    .choose-your-tea-cards-wrapper
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-choose-your-tea-text
+    {
+        text-align: center;
+    }
+    
+    .choose-tea-button, .choose-tea-button:active, .choose-tea-button:focus
+    {
+        background-color: transparent;
+        border: none;
+        color: black;
+        text-decoration: underline;
+        font-style: italic;
+        border-style: none;
+        box-shadow: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .choose-tea-button:hover
+    {
+        background-color: transparent;
+        border: none;
+        color: black;
+    }
+}
+/*Choose Your Tea*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Browse By Category*/
+.browse-by-category-text
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: xx-large;
+    letter-spacing: 3px;   
+}
+
+.browse-by-category-button
+{
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    /* font-weight: bold; */
+}
+
+@media screen and (min-width: 992px)
+{
+    .browse-by-category-button-left
+    {
+        margin-left: 25%;
+        padding-left: 10px;
+    }
+    
+    .browse-by-category-button-right
+    {
+        margin-right: 25%;
+        padding-right: 10px;
+    }
+}
+
+
+@media screen and (min-width: 992px) 
+{
+    .browse-by-category-button, .browse-by-category-button:active, .browse-by-category-button:focus, .browse-by-category-button:hover
+    {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 50%;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .browse-by-category-button
+    {
+        font-size: small;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 95%;
+    }
+
+}
+/*Browse By Category*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Top Picks*/
+.top-picks-title
+{
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-top: 1%;
-}
-
-.navbar-icons-wrapper
-{
-    text-align: right;
-}
-
-.navbar-icon-picture
-{
-    margin-top: 5%;
-    height: 16px;
-    width: 16px;
-}
-/*Navbar*/
-
-.top-picks-button
-{
-    background-color: black;
-    color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 70%;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
 
 .top-picks-cards-wrapper
@@ -51,9 +303,9 @@
     display: flex;
 }
 
-.get-inspired-cards-wrapper
+.card-carousel-text
 {
-    display: flex;
+    text-align: center;
 }
 
 .tri-carousel-card
@@ -64,18 +316,17 @@
     background: transparent;
 }
 
-
-.choose-your-tea-card
+.duo-carousel-card
 {
-    margin: auto;
-    width: calc(100%/9);
-    margin: 1vw;
+    margin: 0 .5em;
+    width: calc(100%/2);
+    border: none;
+    background: transparent;
 }
 
 .carousel-card-image-wrapper
 {
     height: 22vw;
-    /*margin: 0 auto;*/
     align-items: center;
     justify-content: center;
 }
@@ -86,70 +337,91 @@
     max-height: 100%;
 }
 
-.card-carousel-text
-{
-    text-align: center;
-}
-
-.choose-your-tea-cards-wrapper
-{
-    display: flex;
-    height: 20vw;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-choose-your-tea-text
-{
-    text-align: center;
-}
-
-.choose-tea-button
-{
-    background-color: transparent;
-    border: none;
-    color: black;
-}
-
-.choose-tea-button:hover
-{
-    background-color: transparent;
-    border: none;
-    color: black;
-}
-
 .card-img-top
 {
     border-radius: 5%;
+    height: 100%;
 }
 
-.treat-your-inbox-wrapper
+.card-carousel-button
 {
-    background-color: #d0e4ff;
-    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
 }
 
-.spacer
+.card-title-text
 {
-    padding-top: 3%;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.footer-list
+/*Smaller screen CSS*/
+@media screen and (max-width: 992px)
 {
-    list-style: none;
+    .larger-carousel
+    {
+        display: none;
+    }
+
+    .card-title-text
+    {
+        font-size: smaller;
+    }
+
+    .card-carousel-button
+    {
+        font-size: small;
+    }
+
+    .larger-carousel
+    {
+        display: none;
+    }
+
+    .carousel-card-image-wrapper
+    {
+        height: 40vw;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.footer-element-text, .footer-element-text:hover 
+@media screen and (min-width: 991px)
 {
-    text-decoration: none;
-    color: black;
+    .smaller-carousel
+    {
+        display: none;
+    }
 }
+
+/*Top Picks*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
 
 /*Fav Tea*/
+.fav-tea-wrapper
+{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    background-color: #e6f6ec;
+}
+
 .fav-tea-title
 {
+    font-family: 'Fjalla One', sans-serif;
     font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 3px; 
     padding-bottom: 5vw;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .fav-tea-button
@@ -158,55 +430,241 @@
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 20%;
+    letter-spacing: 5px;
 }
 
 .fav-tea-button:hover
 {
     background-color: whitesmoke;
     color: black;
-    
 }
+
+.fav-tea-text
+{
+    font-size: small;
+}
+
+@media screen and (max-width: 992px)
+{
+    .fav-tea-button
+    {
+        width: 50%;
+        font-size: small;
+    }
+
+    .fav-tea-text
+    {
+        font-size: x-small;
+    }
+}
+
 /*Fav Tea*/
 
-/*Tea Quiz*/
-.quiz-question-one
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Get Inspired*/
+
+.get-inspired-title
 {
-    display: none;
-}
-.quiz-question-two
-{
-    display: none;
-}
-.quiz-question-three
-{
-    display: none;
-}
-.quiz-question-four
-{
-    display: none;
-}
-.quiz-question-five
-{
-    display: none;
-}
-.quiz-question-six
-{
-    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
 
-.quiz-questions-text
+.get-inspired-cards-wrapper
 {
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    display: flex;
+}
+
+
+/*Get Inspired*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Our Sustainable Tea*/
+
+.sustainable-tea-container
+{
+    padding-top: 2%;
+    background-color: #e6f6ec;
+    padding-bottom: 2%;
+}
+
+.sustainable-tea-title
+{
+    font-family: 'Fjalla One', sans-serif;
     font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 3px; 
+    padding-bottom: 3vw;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+
+.sustainable-tea-header
+{
+    font-weight: bold;
+    font-size: medium;
+    letter-spacing: 2px;
+}
+
+.sustainable-tea-description
+{
+    font-size: small;
+}
+
+@media screen and (max-width: 992px)
+{
+    .sustainable-tea-header
+    {
+        font-size: small;
+        letter-spacing: 0;
+    }
+    
+    .sustainable-tea-description
+    {
+        font-size: x-small;
+    }
+}
+
+/*Our Sustainable Tea*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Treat Your Inbox*/
+
+.treat-your-inbox-wrapper
+{
+    
+    background-color: #d0e4ff;
     text-align: center;
 }
 
-.quiz-question-button, .quiz-question-button:hover, .quiz-question-button:active
+.treat-your-inbox-title
 {
-    background-color: aliceblue;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 3px; 
+    padding-bottom: 5vw;
+    padding-top: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.email-button
+{
+    margin-right: 15vw;
+}
+
+.email-button:hover, .email-button:active, .email-button:focus
+{
+    border: none;
+}
+
+.email-enter-image
+{
+    max-height: 32px;
+    max-width: 32px;
+}
+
+@media screen and (max-width: 991px)
+{
+    .email-button
+    {
+        margin-right: 0;
+    }
+}
+
+
+
+/*Treat Your Inbox*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Footer*/
+.footer-list
+{
+    list-style: none;
+    align-items: left;
+    justify-content: left;
+    font-weight: 100;
+}
+
+.footer-element-text, .footer-element-text:hover 
+{
+    text-decoration: none;
     color: black;
-    width: 50%;
-    letter-spacing: 5px;
-    margin-bottom: 2vw;
+
+}
+
+.footer-title
+{
+    font-weight: bold;
+}
+
+/*Larger Screen Footer*/
+@media screen and (min-width: 992px)
+{
+    .footer-title
+    {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+/*Smaller Screen Footer*/
+@media screen and (max-width: 991px)
+{
+    .footer-title
+    {
+        font-size: small;
+        padding-left: 10%;
+    }
+
+    .footer-element
+    {
+        font-size: x-small;
+        left: 0;
+    }
+
+    .footer-element-text
+    {
+        left: 0;
+    }
+}
+
+/*Footer*/
+
+.spacer
+{
+    padding-top: 3%;
+}
+
+.small-spacer
+{
+    padding-top: 1%;
 }

@@ -1,0 +1,503 @@
+body
+{
+    overflow-x: hidden;
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*My Account*/
+.profile-main-section
+{
+    background-color: #E6DACA !important;
+    text-align: center;
+}
+
+.account-info
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-box
+{
+    background-color: white;
+
+    height: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.profile-right-section
+{
+    margin-top: 4vw;
+}
+
+.my-account-box
+{
+    background-color: white;
+    border-radius: 5%;
+
+    height: 22vw;
+    width: 50%;
+    margin-top: 5vw;
+
+    text-align: left;
+}
+
+.account-text
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+    padding-left: 5%;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.account-info
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-top: 1vw;
+    padding-left: 5%;   
+}
+
+.larger-right-box
+{
+    border-radius: 5%;
+
+}
+
+.smaller-box
+{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 5%;
+}
+
+#point-value
+{
+    padding-top: 4%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 991px)
+{
+    .profile-box
+    {
+        background-color: white;
+
+        height: 50vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+}
+
+/*My Account*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Membership Type*/
+@media screen and (min-width: 992px)
+{
+    .membership-type-section
+    {
+        padding-top: 10vw;
+        padding-bottom: 3vw;
+        background-color: #E6DACA;
+        text-align: center;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    .memberships-container
+    {
+        text-align: center;
+        display: flex;
+        align-items: flex-start;
+
+        padding-left: 4vw;
+    }
+
+    .general-membership-container
+    {
+        text-align: center;
+        background-color: white;
+        width: 20vw;
+
+        border-radius: 2%;
+
+        font-family: 'Inter', sans-serif;
+        font-size: x-large;
+        padding-top: 2vw;
+    }
+
+    .bronze-container
+    {
+        height: 18vw;
+        display: block;
+        justify-content: center;
+    }
+
+    .silver-container
+    {
+        height: 27vw;
+        display: block;
+        justify-content: center;
+    }
+
+    .gold-container
+    {
+        height: 30vw;
+        display: block;
+        justify-content: center;
+    }
+
+    .diamond-container
+    {
+        height: 34vw;
+        display: block;
+        justify-content: center;
+    }
+
+    .membership-text
+    {
+        font-size: medium;
+    }
+
+    .membership-info
+    {
+        list-style: none;
+        text-align: left;
+        /* text-align: justify;
+        text-justify: inter-word; */
+        font-size: medium;
+        padding-top: 1%;
+        padding-bottom: 8%;
+    }
+}
+
+/*Membership Type*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Order History*/
+@media screen and (min-width: 992px)
+{
+    .order-history-container
+    {
+        padding-top: 5vw;
+        padding-bottom: 7vw;
+        background-color: #E6DACA;
+    }
+
+    .order-history-content
+    {
+        background-color: white;
+        border-radius: 1%;
+        height: 25vw;
+    }
+
+    .order-history-title
+    {
+        padding-top: 2%;
+        padding-left: 1%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    .order-history-component-name
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+
+    .display-more-orders-button, .display-more-orders-button:hover, .display-more-orders-button:active, .display-more-orders-button:focus 
+    {
+        margin-top: 1vw;
+        background-color: white;
+        text-align: center;
+        display: block;
+        justify-content: center;
+    }
+}
+
+/***************************************************************/
+.shop-item
+{
+    width: 25%;
+    margin: auto;
+    margin-bottom: 3vw;
+    width: 18rem;
+    overflow: hidden;
+}
+
+.hide
+{
+    display: none;
+    overflow: hidden;
+}
+
+/***************************************************************/
+
+/*Top Picks*/
+
+.top-picks-cards-wrapper
+{
+    display: flex;
+}
+
+
+.card-carousel-text
+{
+    text-align: center;
+}
+
+.tri-carousel-card
+{
+    margin: 0 .5em;
+    width: calc(100%/3);
+    border: none;
+    background: transparent;
+    overflow-x: hidden;
+}
+
+.duo-carousel-card
+{
+    margin: 0 .5em;
+    width: calc(100%/2);
+    border: none;
+    background: transparent;
+}
+
+.carousel-card-image-wrapper
+{
+    height: 22vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-card-image-wrapper img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-img-top
+{
+    border-radius: 5%;
+    height: 100%;
+}
+
+.card-carousel-button
+{
+    background-color: black;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.card-title-text
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Smaller screen CSS*/
+@media screen and (max-width: 992px)
+{
+    .larger-carousel
+    {
+        display: none;
+    }
+
+    .card-title-text
+    {
+        font-size: smaller;
+    }
+
+    .card-carousel-button
+    {
+        font-size: small;
+    }
+
+    .larger-carousel
+    {
+        display: none;
+    }
+
+    .carousel-card-image-wrapper
+    {
+        height: 40vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 991px)
+{
+    .smaller-carousel
+    {
+        display: none;
+    }
+}
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Get Inspired*/
+
+.get-inspired-title
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.get-inspired-cards-wrapper
+{
+    display: flex;
+}
+
+/*Get Inspired*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Treat Your Inbox*/
+
+.treat-your-inbox-wrapper
+{
+    
+    background-color: #d0e4ff;
+    text-align: center;
+}
+
+.treat-your-inbox-title
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 3px; 
+    padding-bottom: 5vw;
+    padding-top: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.email-button
+{
+    margin-right: 15vw;
+}
+
+.email-button:hover, .email-button:active, .email-button:focus
+{
+    border: none;
+}
+
+.email-enter-image
+{
+    max-height: 32px;
+    max-width: 32px;
+}
+
+@media screen and (max-width: 991px)
+{
+    .email-button
+    {
+        margin-right: 0;
+    }
+}
+
+
+
+/*Treat Your Inbox*/
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+/*Footer*/
+.footer-list
+{
+    list-style: none;
+    align-items: left;
+    justify-content: left;
+    font-weight: 100;
+}
+
+.footer-element-text, .footer-element-text:hover 
+{
+    text-decoration: none;
+    color: black;
+
+}
+
+.footer-title
+{
+    font-weight: bold;
+}
+
+/*Larger Screen Footer*/
+@media screen and (min-width: 992px)
+{
+    .footer-title
+    {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+/*Smaller Screen Footer*/
+@media screen and (max-width: 991px)
+{
+    .footer-title
+    {
+        font-size: small;
+        padding-left: 10%;
+    }
+
+    .footer-element
+    {
+        font-size: x-small;
+        left: 0;
+    }
+
+    .footer-element-text
+    {
+        left: 0;
+    }
+}
+
+/*Footer*/
+
+.spacer
+{
+    padding-top: 3%;
+}
+
+.small-spacer
+{
+    padding-top: 1%;
+}
