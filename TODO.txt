@@ -5,3 +5,6 @@ get inspired links to the instagram page
 Make it so that each link that directs to a shop page passes in the tye of filter
 that you will be using to a javascript funnction so that it is possible to
 query the database properly and display what was requested
+
+Refactor everything so that it is modular. There will be less pages than origionally anticipated, so put them all 
+into the main folder so the modular components are easier to use.

@@ -9,6 +9,9 @@ CREATE TABLE IF NOT EXISTS products(
     productDescription VARCHAR(1023),
     caffineLevel INT,
     size CHAR(11),
+    benefits JSON,
+    teaCollection VARCHAR(15),
+    teaFilter VARCHAR(15),
     PRIMARY KEY(productID)
 );
 

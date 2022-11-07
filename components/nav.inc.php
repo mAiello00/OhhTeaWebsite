@@ -42,7 +42,7 @@
     <div class="sideNavigation" id="sideNav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#">Sale</a>
-      <a href="#">Tea</a>
+      <a href="">Tea</a>
       <a href="#">Sweeteners</a>
       <a href="#">Matcha</a>
       <a href="#">Wellness</a>
@@ -77,8 +77,8 @@
             </li>
             <li class="nav-item">
               <div class="align-items-center justify-content-center" id="companyHeader">
-                <a href="index.html">
-                  <img src="img/ohhTeaLogo.png" id="companyLogo">
+                <a href="index.php">
+                  <img src="img/ohhTeaLogo.png" id="companyLogo" style="max-width: 100px;">
                 </a>  
               </div>
             </li>
@@ -158,28 +158,28 @@
             <div class="col text-center">
               <ul class="tea-dropdown-col">
                 <li>
-                  <a href="#" class="tea-dropdown-item">New Arrivals</a>
+                  <a href="main-shop-page.php?teaFilter=NewReleases" class="tea-dropdown-item">New Arrivals</a>
                 </li>
                 <li>
-                  <a href="#" class="tea-dropdown-item">Best Sellers</a>
+                  <a href="main-shop-page.php?teaFilter=BestSellers" class="tea-dropdown-item">Best Sellers</a>
                 </li>
                 <li>
-                  <a href="#" class="tea-dropdown-item">Loose Leaf</a>
+                  <a href="main-shop-page.php?teaFilter=LooseLeaf" class="tea-dropdown-item">Loose Leaf</a>
                 </li>
                 <li>
-                  <a href="#" class="tea-dropdown-item">Bagged Tea</a>
+                  <a href="main-shop-page.php?teaFilter=BaggedTea" class="tea-dropdown-item">Bagged Tea</a>
                 </li>
                 <li>
-                  <a href="#" class="tea-dropdown-item">Organic</a>
+                  <a href="main-shop-page.php?teaFilter=Organic" class="tea-dropdown-item">Organic</a>
                 </li>
                 <li>
-                  <a href="#" class="tea-dropdown-item">De-Caffinated</a>
+                  <a href="main-shop-page.php?teaFilter=DeCaffinated" class="tea-dropdown-item">De-Caffinated</a>
                 </li>
                 <li>
-                  <a href="#" class="tea-dropdown-item">Kids Favourites</a>
+                  <a href="main-shop-page.php?teaFilter=KidsFavourite" class="tea-dropdown-item">Kids Favourites</a>
                 </li>
                 <li>
-                  <a href="#" class="tea-dropdown-item">Pregnancy Safe</a>
+                  <a href="main-shop-page.php?teaFilter=PregnancySafe" class="tea-dropdown-item">Pregnancy Safe</a>
                 </li>
                 <li>
                   <a href="#" class="tea-dropdown-item">Learn More About Tea!</a>
@@ -193,28 +193,28 @@
                   <a class="tea-dropdown-item dropdown-tea-title">Tea Types</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Herbal</a>
+                  <a href="main-shop-pahe.php?teaType=herbal" class="tea-dropdown-item">Herbal</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Green</a>
+                  <a href="main-shop-page.php?teaType=green" class="tea-dropdown-item">Green</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Black</a>
+                  <a href="main-shop-page.php?teaType=black" class="tea-dropdown-item">Black</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">White</a>
+                  <a href="main-shop-pahe.php?teaType=white" class="tea-dropdown-item">White</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Matcha</a>
+                  <a href="main-shop-page.php?teaType=matcha" class="tea-dropdown-item">Matcha</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Rooibos</a>
+                  <a href="main-shop-page.php?teaType=rooibos" class="tea-dropdown-item">Rooibos</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Oolong</a>
+                  <a href="main-shop-page.php?teaType=oolong" class="tea-dropdown-item">Oolong</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Chai</a>
+                  <a href="main-shop-page.php?teaType=chai" class="tea-dropdown-item">Chai</a>
                 </li>
               </ul>
             </div>
@@ -225,19 +225,19 @@
                   <a href="" class="tea-dropdown-item dropdown-tea-title">Tea By Collection</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Fall Collection</a>
+                  <a href="main-shop-page.php?collection=fall" class="tea-dropdown-item">Fall Collection</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Winter Collection</a>
+                  <a href="main-shop-page.php?collection=winter" class="tea-dropdown-item">Winter Collection</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Summer Collection</a>
+                  <a href="main-shop-page.php?collection=summer" class="tea-dropdown-item">Summer Collection</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Spring Collection</a>
+                  <a href="main-shop-page.php?collection=spring" class="tea-dropdown-item">Spring Collection</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Breakfast Collection</a>
+                  <a href="main-shop-page.php?collection=breakfast" class="tea-dropdown-item">Breakfast Collection</a>
                 </li>
               </ul>
             </div>
@@ -248,30 +248,26 @@
                   <a href="" class="tea-dropdown-item dropdown-tea-title">Tea By Benefit</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Cold</a>
+                  <a href="main-shop-page.php?benefit=cold" class="tea-dropdown-item">Cold</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Immunity</a>
+                  <a href="main-shop-page.php?benefit=immunity" class="tea-dropdown-item">Immunity</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Sleep</a>
+                  <a href="main-shop-page.php?benefit=sleep" class="tea-dropdown-item">Sleep</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Relax</a>
+                  <a href="main-shop-page.php?benefit=relax" class="tea-dropdown-item">Relax</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Detox & Digest</a>
+                  <a href="main-shop-page.php?benefit=detoxdigest" class="tea-dropdown-item">Detox & Digest</a>
                 </li>
                 <li>
-                  <a href="" class="tea-dropdown-item">Energy</a>
+                  <a href="main-shop-page.php?benefit=energy" class="tea-dropdown-item">Energy</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
-    <!------------------------------------------------------------------------------------------------------------------------------>
-    <!------------------------------------------------------------------------------------------------------------------------------>
-    <!------------------------------------------------------------------------------------------------------------------------------>
 
     <main>
