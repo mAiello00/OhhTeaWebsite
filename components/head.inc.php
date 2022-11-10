@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="customcss/customcss.css">
         <link rel="stylesheet" href="customcss/navbar.css"
         <link rel="stylesheet" href="customcss/shopstylesheet.css">
-        <link rel="stylesheet" href="customcss/shop-item.css">
+        <link rel="stylesheet" href="customcss/product-page.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">

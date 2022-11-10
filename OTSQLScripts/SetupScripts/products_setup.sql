@@ -5,13 +5,17 @@ CREATE TABLE IF NOT EXISTS products(
     productsName VARCHAR(127) NOT NULL,
     productType VARCHAR(15) NOT NULL,
     productImageSource VARCHAR(150),
-    productPrice DECIMAL(4, 2) NOT NULL,
+    productPrice JSON NOT NULL,
     productDescription VARCHAR(1023),
     caffineLevel INT,
-    size CHAR(11),
+    size JSON,
     benefits JSON,
     teaCollection VARCHAR(15),
-    teaFilter VARCHAR(15),
+    teaFilter JSON,
+    productPageImages JSON,
+    ingredients VARCHAR(256),
+    taste VARCHAR(512),
+    bestToMakeAs VARCHAR(512),
     PRIMARY KEY(productID)
 );
 

@@ -41,17 +41,17 @@
     <!--SideNav-->
     <div class="sideNavigation" id="sideNav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Sale</a>
-      <a href="">Tea</a>
-      <a href="#">Sweeteners</a>
-      <a href="#">Matcha</a>
-      <a href="#">Wellness</a>
-      <a href="#">Accessories</a>
-      <a href="#">Bundles</a>
-      <a href="#">Gifts</a>
+      <a href="main-shop-page.php?teaFilter=sale">Sale</a>
+      <a href="main-shop-page.php">Tea</a>
+      <a href="main-shop-page.php?teaFilter=sweetener">Sweeteners</a>
+      <a href="main-shop-page.php?teaType=matcha">Matcha</a>
+      <a href="main-shop-page.php?teaFilter=wellness">Wellness</a>
+      <a href="main-shop-page.php?teaFilter=accessories">Accessories</a>
+      <a href="main-shop-page.php?teaFilter=bundle">Bundles</a>
+      <a href="main-shop-page.php?teaFilter=gift">Gifts</a>
       <a href="quiz/quiz-page.php">Tea Quiz</a>
       <a href="#">Subscriptions</a>
-      <a href="#">How To Make...</a>
+      <a href="#">Know Your Tea</a>
     </div>
 
     <!------------------------------------------------------------------------------------------------------------------------------>
@@ -111,28 +111,28 @@
           <!--Bottom Part of Navbar-->
           <ul class="navbar-nav justify-content-center w-100 font-weight-bold" id="nav-collection">
             <li class="nav-item active">
-              <a href="#" class="nav-link" style="color: red;">Sale</a>
+              <a href="main-shop-page.php?teaFilter=sale" class="nav-link" style="color: red;">Sale</a>
             </li>
             <li class="nav-item">
               <a href="javascript:void(0)" class="nav-link" onclick="teaDrop()">Tea</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sweeteners</a>
+              <a class="nav-link" href="main-shop-page.php?teaFilter=sweetener">Sweeteners</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Matcha</a>
+              <a class="nav-link" href="main-shop-page.php?teaType=matcha">Matcha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Wellness</a>
+              <a class="nav-link" href="main-shop-page.php?teaFilter=wellness">Wellness</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Accessories</a>
+              <a class="nav-link" href="main-shop-page.php?teaFilter=accessories">Accessories</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Bundles</a>
+                <a class="nav-link" href="main-shop-page.php?teaFilter=bundle">Bundles</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gifts</a>
+              <a class="nav-link" href="main-shop-page.php?teaFilter=gift">Gifts</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="quiz/quiz-page.php">Tea Quiz</a>

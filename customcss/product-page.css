@@ -1,0 +1,45 @@
+.product-container
+{
+    margin-top: 4vw;
+}
+
+.product-image-container
+{
+    display: flex;
+}
+
+.picture-list li
+{
+    width: 110px;
+    height: 114px;
+    border: none;
+    list-style: none;
+}
+
+.picture-list li img
+{
+    width: 97%;
+    height: auto;
+}
+
+.product-image-container .side-picture-container
+{
+    vertical-align: top;
+    margin-top: 0px;
+}
+
+.picture-list li img
+{
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.current-product-image
+{
+    height: 445px;
+    width: 350px;
+    margin-top: 0.25vw;
+    border-radius: 10%;
+    margin-left: 4vw;
+}
