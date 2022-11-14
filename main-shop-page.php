@@ -26,36 +26,36 @@
           Type Of Tea
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Herbal</a></li>
-          <li><a class="dropdown-item" href="#">Green</a></li>
-          <li><a class="dropdown-item" href="#">Black</a></li>
-          <li><a class="dropdown-item" href="#">White</a></li>
-          <li><a class="dropdown-item" href="#">Matcha</a></li>
-          <li><a class="dropdown-item" href="#">Rooibos</a></li>
-          <li><a class="dropdown-item" href="#">Oolong</a></li>
-          <li><a class="dropdown-item" href="#">Chai</a></li>
+          <li><a class="dropdown-item" onclick="changeTypeOfTea('Herbal')">Herbal</a></li>
+          <li><a class="dropdown-item" onclick="changeTypeOfTea('Green')">Green</a></li>
+          <li><a class="dropdown-item" onclick="changeTypeOfTea('Black')">Black</a></li>
+          <li><a class="dropdown-item" onclick="changeTypeOfTea('White')">White</a></li>
+          <li><a class="dropdown-item" onclick="changeTypeOfTea('Matcha')">Matcha</a></li>
+          <li><a class="dropdown-item" onclick="changeTypeOfTea('Rooibos')">Rooibos</a></li>
+          <li><a class="dropdown-item" onclick="changeTypeOfTea('Oolong')">Oolong</a></li>
+          <li><a class="dropdown-item" onclick="changeTypeOfTea('Chai')">Chai</a></li>
         </ul>
       </div>
-      <div class="dropdown">
+      <!-- <div class="dropdown" style="padding-left: 1rem;">
         <button class="btn rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #EBE9E7;">
           Caffine Level
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-          <li><a class="dropdown-item" href="#">Hight Caffine</a></li>
-          <li><a class="dropdown-item" href="#">Low Caffine</a></li>
-          <li><a class="dropdown-item" href="#">Caffine Free</a></li>
+          <li><a class="dropdown-item" onclick="changeCaffineLevel('High Caffine')">High Caffine</a></li>
+          <li><a class="dropdown-item" onclick="changeCaffineLevel('High Caffine')">Low Caffine</a></li>
+          <li><a class="dropdown-item" onclick="changeCaffineLevel('High Caffine')">Caffine Free</a></li>
         </ul>
-      </div>
-      <div class="dropdown">
+      </div> -->
+      <div class="dropdown" style="padding-left: 1rem;">
         <button class="btn rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #EBE9E7;">
           Price
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-          <li><a class="dropdown-item" href="#">Low to Hight</a></li>
-          <li><a class="dropdown-item" href="#">Hight to Low</a></li>
-          <li><a class="dropdown-item" href="#">Under $10</a></li>
-          <li><a class="dropdown-item" href="#">Under $20</a></li>
-          <li><a class="dropdown-item" href="#">Under $40</a></li>
+          <li><a class="dropdown-item" onclick="chagePrice('Low to High')">Low to High</a></li>
+          <li><a class="dropdown-item" onclick="chagePrice('High to Low')">High to Low</a></li>
+          <li><a class="dropdown-item" onclick="chagePrice('Under$10')">Under $10</a></li>
+          <li><a class="dropdown-item" onclick="chagePrice('Under $20')">Under $20</a></li>
+          <li><a class="dropdown-item" onclick="chagePrice('Under $40')">Under $40</a></li>
         </ul>
       </div>
 
@@ -110,7 +110,7 @@
             <div class="card-body">
               <h5 class="card-title">{$row["productsName"]}</h5>
               <p class="card-text">{$row["productDescription"]}</p>
-              <a href="shop-item-page.php?productName={$row['productsName']}&currentImage={row['productImageSource']}&caffineLevel={$row['caffineLevel']}&tType={$row['productType']}&tIngredients={$row['ingredients']}&tTaste={$row['taste']}&bestMake={$row['bestToMakeAs']}&sideImages={$row['productPageImages']}&tSize={$row['size']}&tPrice={$row['productPrice']}" class="btn rounded-pill shop-item-button" style="background-color:#EBE9E7; font-weight: bold;">Add To Cart</a>
+              <a href="shop-item-page.php?productName={$row['productsName']}&currentImage={$row['productImageSource']}&caffineLevel={$row['caffineLevel']}&tType={$row['productType']}&tIngredients={$row['ingredients']}&tTaste={$row['taste']}&bestMake={$row['bestToMakeAs']}&sideImages={$row['productPageImages']}&tSize={$row['size']}&tPrice={$row['productPrice']}" class="btn rounded-pill shop-item-button" style="background-color:#EBE9E7; font-weight: bold;">Add To Cart</a>
             </div>
           </div>
         HTML;

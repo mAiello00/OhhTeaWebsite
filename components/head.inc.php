@@ -22,5 +22,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
         <script src="customjs/side-nav.js"></script>
         <script src="customjs/teaDropdown.js"></script>
+        <script src="customjs/change-shop-image.js"></script>
+        <script src="customjs/change-price.js"></script>
+        <script src="customjs/change-shop-search.js"></script>
     </head>
     <body style="background-color: white; max-width: 100%; overflow-x: hidden;">

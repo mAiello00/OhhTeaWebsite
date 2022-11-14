@@ -43,3 +43,8 @@
     border-radius: 10%;
     margin-left: 4vw;
 }
+
+.checked
+{
+    color: orange;
+}

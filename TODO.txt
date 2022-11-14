@@ -1,26 +1,8 @@
-more padding atthe top and bottom of the dropdown menu
+more padding atthe top and bottom of the dropdown menu and side nav
 get inspired links to the instagram page 
 
 Use the substring algorithm you learned last year when searching for products by name
 space out the buttons on the shop page 
-
-
-search tags to implement:
-* accessories
-* wellness
-* bundle
-* gift
-* sweetener
-* sale
-
-Columns to implement in database:
-* JSON column containing the product page pictures
-* Ingredients
-* Taste
-* Best to Make as...
-
-The button at the bottom of the product information section will look at the type of 
-product and link to a different page based on what it is
 
 When adding the price and size to the product information page, check the index of the sizeand match 
 it to the index of the price
@@ -29,3 +11,5 @@ it to the index of the price
 the price along with it
 
 * find fonts for the shop-item-page
+
+* change caffine meter depending on the product being displayeds

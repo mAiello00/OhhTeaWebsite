@@ -1,0 +1,4 @@
+function changePrice(currentIndex)
+{
+    
+}
