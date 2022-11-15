@@ -12,4 +12,45 @@ the price along with it
 
 * find fonts for the shop-item-page
 
-* change caffine meter depending on the product being displayeds
+* change caffine meter depending on the product being displayed
+
+* add a JSON column to the atabase for the quiz question categories
+    -- Personal reference
+    * Question 1:
+        - Loose Leaf
+        - Bagged
+    
+    * Question 2
+        - fancy
+        - milkAndSugar
+        - hot
+        - black
+        - honeyAndLemon
+        - iceCold
+
+    * Question 3
+        - caffineFree
+        - lowCaffine
+        - highCaffine
+        - allCaffine
+
+    * Question 4
+        - fruity
+        - floral
+        - sweet
+        - traditional
+        - spiced
+        - natural
+
+    * Question 5
+        - forTaste
+        - forWellness
+        - forEnergy
+        - toCalmDown
+        - toSleep
+        -toDetoxDigest
+    
+    *Question 6
+        - endTaste
+        - endWellness
+        - endEnergy

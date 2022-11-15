@@ -49,7 +49,7 @@
       <a href="main-shop-page.php?teaFilter=accessories">Accessories</a>
       <a href="main-shop-page.php?teaFilter=bundle">Bundles</a>
       <a href="main-shop-page.php?teaFilter=gift">Gifts</a>
-      <a href="quiz/quiz-page.php">Tea Quiz</a>
+      <a href="quiz-page.php">Tea Quiz</a>
       <a href="#">Subscriptions</a>
       <a href="#">Know Your Tea</a>
     </div>
@@ -240,7 +240,7 @@
               <a class="nav-link" href="main-shop-page.php?teaFilter=gift">Gifts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="quiz/quiz-page.php">Tea Quiz</a>
+              <a class="nav-link" href="quiz-page.php">Tea Quiz</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Subscriptions</a>

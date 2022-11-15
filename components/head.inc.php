@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="customcss/navbar.css"
         <link rel="stylesheet" href="customcss/shopstylesheet.css">
         <link rel="stylesheet" href="customcss/product-page.css">
+        <link rel="stylesheet" href="customcss/quiz-page.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
@@ -21,9 +22,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
         <script src="customjs/side-nav.js"></script>
-        <script src="customjs/teaDropdown.js"></script>
         <script src="customjs/change-shop-image.js"></script>
         <script src="customjs/change-price.js"></script>
         <script src="customjs/change-shop-search.js"></script>
+        <script src="customjs/quiz-page.js"></script>
     </head>
     <body style="background-color: white; max-width: 100%; overflow-x: hidden;">

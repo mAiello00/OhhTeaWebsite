@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS products(
     ingredients VARCHAR(256),
     taste VARCHAR(512),
     bestToMakeAs VARCHAR(512),
+    reviews JSON,
+    quizTags JSON,
     PRIMARY KEY(productID)
 );
 
