@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="customcss/privacyPage.css">
         <link rel="stylesheet" href="customcss/returnsExchangeSipping.css">
         <link rel="stylesheet" href="customcss/terms-conditions.css">
+        <link rel="stylesheet" href="customcss/about-us-page.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">

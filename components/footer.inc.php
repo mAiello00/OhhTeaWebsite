@@ -8,7 +8,7 @@
                         <a class="footer-element-text footer-title" href="#">BRAND INFO</a>
                         </li>
                         <li class="footer-element">
-                        <a class="footer-element-text" href="#">About Us</a>
+                        <a class="footer-element-text" href="about-us.php">About Us</a>
                         </li>
                         <li class="footer-element">
                         <a class="footer-element-text" href="#">Sustainability</a>

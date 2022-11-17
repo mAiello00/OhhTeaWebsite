@@ -54,3 +54,5 @@ the price along with it
         - endTaste
         - endWellness
         - endEnergy
+
+* find fonts for shipping, terms, about us, privacy policy

@@ -1,0 +1,27 @@
+.about-us-wrapper
+{
+    background-color: #EFEFEB;
+    padding-top: 4vw;
+    padding-bottom: 2vw;
+    
+}
+.about-us-information
+{
+    display: flex;
+    margin: auto;
+}
+
+.about-us-img
+{
+    height: 445px;
+    width: 350px;
+    border-radius: 10%;
+}
+
+.about-us-info
+{
+    text-align: center;
+    width: 50%;
+    margin-left: 15%;
+    letter-spacing: 1px;
+}
