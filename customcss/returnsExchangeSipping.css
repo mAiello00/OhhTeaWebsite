@@ -1,0 +1,39 @@
+.returns-container
+{
+    background-color: #EFEFEB;
+}
+
+.shipping-main-title
+{
+    text-align: center; 
+    padding-top: 2vw; 
+    padding-bottom: 2vw;
+}
+
+.return-information
+{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 60%;
+}
+
+.shipping-exchange-section-title
+{
+    font-weight: bold;
+}
+
+.shipping-information
+{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 1vw;
+    padding-bottom: 1vw;;
+    width: 60%;
+}
+
+.shipping-location
+{
+    font-weight: bold;
+}
