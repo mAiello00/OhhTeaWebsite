@@ -1,0 +1,42 @@
+.privacy-container
+{
+    background-color: #EFEFEB;
+}
+
+.privacy-main-title
+{
+    text-align: center; 
+    padding-top: 2vw; 
+    padding-bottom: 2vw;
+}
+
+.privacy-information
+{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 60%;
+}
+
+.privacy-section-title
+{
+    font-weight: bold;
+}
+
+.privacy-policy-inter-underline
+{
+    text-decoration: underline;
+}
+
+#privacy-policy-bullets
+{
+    padding-top: 1vw;
+}
+
+.privacy-policy-end-section
+{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2vw;
+}

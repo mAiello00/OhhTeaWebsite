@@ -14,7 +14,7 @@
                         <a class="footer-element-text" href="#">Sustainability</a>
                         </li>
                         <li class="footer-element">
-                        <a class="footer-element-text" href="#">Privacy Policy</a>
+                        <a class="footer-element-text" href="privacy-policy.php">Privacy Policy</a>
                         </li>
                         <li class="footer-element">
                         <a class="footer-element-text" href="#">Terms and Conditions</a>
@@ -34,10 +34,10 @@
                         <a class="footer-element-text" href="#">FAQs</a>
                         </li>
                         <li class="footer-element">
-                        <a class="footer-element-text" href="#">Returns and Exchanges</a>
+                        <a class="footer-element-text" href="returns-exchanges-shipping-handling.php">Returns and Exchanges</a>
                         </li>
                         <li class="footer-element">
-                        <a class="footer-element-text" href="#">Shipping and Handling</a>
+                        <a class="footer-element-text" href="returns-exchanges-shipping-handling.php">Shipping and Handling</a>
                         </li>
                         <li class="footer-element">
                         <a class="footer-element-text" href="#">Terms of Sale</a>
