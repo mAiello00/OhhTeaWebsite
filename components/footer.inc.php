@@ -17,7 +17,7 @@
                         <a class="footer-element-text" href="privacy-policy.php">Privacy Policy</a>
                         </li>
                         <li class="footer-element">
-                        <a class="footer-element-text" href="#">Terms and Conditions</a>
+                        <a class="footer-element-text" href="terms-conditions.php">Terms and Conditions</a>
                         </li>
                         
                     </ul>

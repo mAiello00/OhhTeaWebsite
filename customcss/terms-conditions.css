@@ -1,0 +1,36 @@
+.terms-conditions-wrapper
+{
+    background-color: #EFEFEB;
+}
+
+.terms-conditions-main-title
+{
+    text-align: center; 
+    padding-top: 2vw; 
+    padding-bottom: 2vw;
+}
+
+.terms-information
+{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 60%;
+}
+
+.terms-section-title
+{
+    font-weight: bold;
+}
+
+.terms-end-section
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+.privacy-bullet
+{
+    padding-bottom: 1rem;
+}
