@@ -8,6 +8,7 @@
     text-align: center; 
     padding-top: 2vw; 
     padding-bottom: 2vw;
+    font-family: 'Barlow', sans-serif;
 }
 
 .terms-information
@@ -33,4 +34,5 @@
 .privacy-bullet
 {
     padding-bottom: 1rem;
+    font-family: 'Barlow', sans-serif;
 }

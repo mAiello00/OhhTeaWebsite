@@ -1,58 +1,19 @@
-more padding atthe top and bottom of the dropdown menu and side nav
 get inspired links to the instagram page 
 
 Use the substring algorithm you learned last year when searching for products by name
 space out the buttons on the shop page 
 
-When adding the price and size to the product information page, check the index of the sizeand match 
+When adding the price and size to the product information page, check the index of the size and match 
 it to the index of the price
 
 * have the smallest price and size displayed at first and let the user change the size - this will change 
 the price along with it
 
-* find fonts for the shop-item-page
-
 * change caffine meter depending on the product being displayed
 
-* add a JSON column to the atabase for the quiz question categories
-    -- Personal reference
-    * Question 1:
-        - Loose Leaf
-        - Bagged
-    
-    * Question 2
-        - fancy
-        - milkAndSugar
-        - hot
-        - black
-        - honeyAndLemon
-        - iceCold
-
-    * Question 3
-        - caffineFree
-        - lowCaffine
-        - highCaffine
-        - allCaffine
-
-    * Question 4
-        - fruity
-        - floral
-        - sweet
-        - traditional
-        - spiced
-        - natural
-
-    * Question 5
-        - forTaste
-        - forWellness
-        - forEnergy
-        - toCalmDown
-        - toSleep
-        -toDetoxDigest
-    
-    *Question 6
-        - endTaste
-        - endWellness
-        - endEnergy
-
-* find fonts for shipping, terms, about us, privacy policy
+*Find Fonts
+    - shop item page
+    - privacy policy page
+    - term conditions page
+    - returns exchanges page
+    - about us page

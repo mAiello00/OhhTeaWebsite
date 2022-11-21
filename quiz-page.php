@@ -23,20 +23,23 @@
   <!------------------------------------------------------------------------------------------------------------------------------>
   <!------------------------------------------------------------------------------------------------------------------------------>
 
-  <!--
-    We need to query the database first in order to get all the elements with 
-  -->
-
-  <?php
+  <!-- <?php
   
-    $query = "SELECT productsName, quizTags FROM products";
+    $query = "SELECT * FROM products";
     $result = mysqli_query($connection, $query);
 
     if(!$result)
     {
       die("database query failed");
     }
-  ?>
+
+    while($row = mysqli_fetch_assoc($result))
+    {
+      echo <<<HTML
+        {$row['productsName']}
+      HTML;
+    }
+  ?> -->
 
   <!--Quiz Content-->
   <div class="container-fluid">
