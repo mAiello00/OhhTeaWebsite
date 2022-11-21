@@ -5,6 +5,7 @@
 //Once all of the questions have been answered, display the recommended products
 
 var selections = [];
+var talliedProducts = [];
 
 //Products that belong to each of the tags  
 var quizData ={
@@ -148,27 +149,22 @@ var quizData ={
 }
 
 //Tally for each product
+//[tally, nameOfProduct, ]
 var productsTally ={
-    "testEntryTwo": 0,
-    "testEntryThree": 0,
-    "testEntryFour": 0
+    "testEntryTwo":[0, "testEntryTwo"],
+    "testEntryThree":[0, "testEntryThree"],
+    "testEntryFour":[0, "testEntryFour"]
 }
-
-//alert(quizData.quizElements[2].applicableProducts.length);
 
 function startQuiz()
 {
-    document.getElementById("question-one").style.display = "block";     
-    // alert(productsTally.testEntryTwo);
-    // productsTally.testEntryTwo++;
-    // alert(productsTally.testEntryTwo);
+    document.getElementById("question-one").style.display = "block"; 
 }
-
 
 //The following functions will...
     //Shows the next question
     //disabled the buttons for the current question question
-    //Saves the result of the current question
+    //Adds to the tally of the applicable products
 
 function startQuestionTwo(brewType)
 {
@@ -334,6 +330,7 @@ function quizEnd(whats)
             index = 26;
     }
     processQuizData(index);
+    convertToArray();
 }
 
 function processQuizData(index)
@@ -341,8 +338,33 @@ function processQuizData(index)
     var toTally = quizData.quizElements[index].applicableProducts;
     for(tea of toTally)
     {
-        productsTally[tea]++;
+        productsTally[tea][0]++;
     }
+}
+
+function convertToArray()
+{
+    //Get each element of produtsTally and append the entire literal to an array
+    //Then we sort based on the total tally for the product(first element withing the literal's array)
+    for(var key in productsTally){
+        var tally = productsTally[key][0];
+        var name = productsTally[key][1];
+        
+        var jsonItem = {
+            "pTally": tally,
+            "pName": name
+        }
+
+        talliedProducts.push(jsonItem);
+    }
+
+    //console.log(talliedProducts[0].pTally);
+
+    talliedProducts.sort(function(a, b){
+        return(b.pTally - a.pTally);
+    });
+
+    console.log(talliedProducts);
 }
 //
 // Quiz Tags
