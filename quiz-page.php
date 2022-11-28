@@ -23,7 +23,7 @@
   <!------------------------------------------------------------------------------------------------------------------------------>
   <!------------------------------------------------------------------------------------------------------------------------------>
 
-  <!-- <?php
+  <?php
   
     $query = "SELECT * FROM products";
     $result = mysqli_query($connection, $query);
@@ -32,14 +32,7 @@
     {
       die("database query failed");
     }
-
-    while($row = mysqli_fetch_assoc($result))
-    {
-      echo <<<HTML
-        {$row['productsName']}
-      HTML;
-    }
-  ?> -->
+  ?>
 
   <!--Quiz Content-->
   <div class="container-fluid">
@@ -169,6 +162,27 @@
 
     </div>
   </div>
+
+<div class="container" id="shop-items" style="overflow-x: hidden;">
+  <div class="row row-cols-4 text-center">
+    <?php
+      while($row = mysqli_fetch_assoc($result))
+      {
+        echo <<<HTML
+          <div class="card shop-item border-0 quiz-product-item" style="display: none; margin-top: 1%; margin-bottom: 1%;">
+            <img src="{$row['productImageSource']}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{$row["productsName"]}</h5>
+              <p class="card-text">{$row["productDescription"]}</p>
+              <a href="shop-item-page.php?productName={$row['productsName']}&currentImage={$row['productImageSource']}&caffineLevel={$row['caffineLevel']}&tType={$row['productType']}&tIngredients={$row['ingredients']}&tTaste={$row['taste']}&bestMake={$row['bestToMakeAs']}&sideImages={$row['productPageImages']}&tSize={$row['size']}&tPrice={$row['productPrice']}" class="btn rounded-pill shop-item-button" style="background-color:#EBE9E7; font-weight: bold;">Add To Cart</a>
+            </div>
+          </div>
+        HTML;
+      }
+      mysqli_free_result($result);
+    ?>
+  </div>
+</div>
 
 <?php
   include 'components/sustainableTea.inc.php';

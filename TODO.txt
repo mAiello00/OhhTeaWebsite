@@ -17,3 +17,5 @@ the price along with it
     - term conditions page
     - returns exchanges page
     - about us page
+
+** display the shop cards on the quiz page depending o the number of tallies

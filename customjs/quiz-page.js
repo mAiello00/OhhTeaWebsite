@@ -358,14 +358,22 @@ function convertToArray()
         talliedProducts.push(jsonItem);
     }
 
-    //console.log(talliedProducts[0].pTally);
-
     talliedProducts.sort(function(a, b){
         return(b.pTally - a.pTally);
     });
 
-    console.log(talliedProducts);
+    showProductsSortedOrder();
 }
+
+function showProductsSortedOrder(){
+    //Tallied products is already in sorted order - so wo go through them in order with this loop
+    for(var key in talliedProducts){
+        var name = productsTally[key][1];
+        var displayItems = document.getElementsByClassName("quiz-product-item");
+        
+    }
+}
+
 //
 // Quiz Tags
 //

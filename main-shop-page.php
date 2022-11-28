@@ -36,16 +36,6 @@
           <li><a class="dropdown-item" onclick="changeTypeOfTea('Chai')">Chai</a></li>
         </ul>
       </div>
-      <!-- <div class="dropdown" style="padding-left: 1rem;">
-        <button class="btn rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #EBE9E7;">
-          Caffine Level
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-          <li><a class="dropdown-item" onclick="changeCaffineLevel('High Caffine')">High Caffine</a></li>
-          <li><a class="dropdown-item" onclick="changeCaffineLevel('High Caffine')">Low Caffine</a></li>
-          <li><a class="dropdown-item" onclick="changeCaffineLevel('High Caffine')">Caffine Free</a></li>
-        </ul>
-      </div> -->
       <div class="dropdown" style="padding-left: 1rem;">
         <button class="btn rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #EBE9E7;">
           Price

@@ -27,3 +27,5 @@ ALTER TABLE tablename ADD columnname VARIABLETYPE;
 
 
 don't post reviews for products right away. let laura manually filter them before they go up
+
+* the maximum caffine level is 5

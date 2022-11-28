@@ -100,23 +100,52 @@
               $price = json_decode($parr);
             }
           ?>
+          
+          <!--Get the arrays into js variables so we can change the display with them-->
+          <script type="text/javascript">
+            var priceArrayJS = <?php echo $parr ?>;
+            var sizeArrayJS = <?php echo $sarr ?>;
+            
+          </script>
+
           <h1 id="product-name"><?php echo $name;?></h1>
 
           <div class="container-fluid product-price-section" style="display: flex;">
 
             <div class="pricing product-price-container" style="margin-left: 1vw; margin-top: 1vw;">
-              <h3 id="product-price">$<?php echo $price[0];?> CAD</h3>
+              <h3 id="productPrice">$<?php echo $price[0];?> CAD</h3>
             </div>  
             <div class="dropdown pricing" id="size-selection" style="margin-left: 5vw; margin-top: 1vw;">
               <button class="btn rounded-pill dropdown-toggle" type="button" id="product-size-dropdown-button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #EBE9E7;">
                 <?php echo $size[0]; echo "g";  ?>
               </button>
+              <script>
+                function createUniqueId(listElementObject){
+                  var uId = (new Date()).getTime();
+                  listElementObject.id = uId;
+                  changePrice(listElementObject.id);
+                }
+                //Doesn't work for default values, only for actual values
+                function changePrice(currId){
+                  //Get the index of the list value we are trying to display
+                  var lElement = document.getElementById(currId);
+                  var elementInnerSize = parseInt(lElement.innerHTML.split(' ')[0]);
+                  var num = sizeArrayJS.indexOf(elementInnerSize);
+
+                  //Get the tag that displays the price for the current size of the product
+                  var shopPagePrice = document.getElementById('productPrice');
+                  shopPagePrice.innerHTML = "$" + priceArrayJS[num] + " CAD";
+
+                  //Change the dropdown button size display
+                  document.getElementById('product-size-dropdown-button').innerHTML = elementInnerSize+"g";
+                }
+              </script>
               <ul class="dropdown-menu">
                 <?php
                   foreach($size as $value)
                   {
                     echo <<<HTML
-                      <li><a class="dropdown-item" href="#" id="">$value g</a></li>
+                      <li><a class="dropdown-item" onclick="createUniqueId(this)">$value g</a></li>
                     HTML;
                   }
                 ?>
@@ -128,10 +157,19 @@
 
           <h4 style="margin-top: 1vw;">Details:</h4>
           <div class="container-fluid" style="display: flex;">
-            <!--TODO: Caffine Leve Meter-->
+            <!--Caffine Level Meter-->
             <div class="progress rounded-pill" style="width: 20%; height: 2.3rem;">
-              <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #8A8A8F;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" id="caffine-level-bar" role="progressbar" style="width: 25%; background-color: #8A8A8F;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+            <script type="text/javascript">
+              var caffineLevel = <?php echo $caffineLevel ?>;
+              try{
+                var caffinePercentage = (caffineLevel/5)*100;
+              }catch(error){
+                var caffinePercentage = 0;
+              }
+              document.getElementById('caffine-level-bar').style.width = caffinePercentage + "%";
+            </script>
             <!--Type of Tea-->
             <div style="margin-left: 2vw;">
               <button class="btn rounded-pill" style="background-color: #ebe9e7;"><?php echo $type; ?></button>
