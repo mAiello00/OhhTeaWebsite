@@ -3,14 +3,6 @@ get inspired links to the instagram page
 Use the substring algorithm you learned last year when searching for products by name
 space out the buttons on the shop page 
 
-When adding the price and size to the product information page, check the index of the size and match 
-it to the index of the price
-
-* have the smallest price and size displayed at first and let the user change the size - this will change 
-the price along with it
-
-* change caffine meter depending on the product being displayed
-
 *Find Fonts
     - shop item page
     - privacy policy page
@@ -18,4 +10,4 @@ the price along with it
     - returns exchanges page
     - about us page
 
-** display the shop cards on the quiz page depending o the number of tallies
+** display the shop cards on the quiz page depending on the number of tallies
