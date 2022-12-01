@@ -30,5 +30,7 @@
         <script src="customjs/change-shop-image.js"></script>
         <script src="customjs/change-shop-search.js"></script>
         <script src="customjs/quiz-page.js"></script>
+        <script src="customjs/review-box.js"></script>
+        <script src="customjs/cart.js"></script>
     </head>
     <body style="background-color: white; max-width: 100%; overflow-x: hidden;">

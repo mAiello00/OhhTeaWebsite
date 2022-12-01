@@ -10,4 +10,7 @@ space out the buttons on the shop page
     - returns exchanges page
     - about us page
 
-** display the shop cards on the quiz page depending on the number of tallies
+* add a forbidden words table to the database (for the reviews section)
+* append the new review to the json column in the 
+
+* each size needs a separate entry in the database

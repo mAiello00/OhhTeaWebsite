@@ -105,7 +105,8 @@
           <script type="text/javascript">
             var priceArrayJS = <?php echo $parr ?>;
             var sizeArrayJS = <?php echo $sarr ?>;
-            
+            var cartPrice = priceArrayJS[0];
+            var cartSize = sizeArrayJS[0];
           </script>
 
           <h1 id="product-name"><?php echo $name;?></h1>
@@ -153,7 +154,7 @@
             </div>
           </div>
 
-          <button class="btn rounded-pill" type="button" style="background-color: black; color: white; margin-left: 0.5vw; margin-top: 1vw;">ADD TO CART</button>
+          <button class="btn rounded-pill" type="button" style="background-color: black; color: white; margin-left: 0.5vw; margin-top: 1vw;" onclick="addToCart();">ADD TO CART</button>
 
           <h4 style="margin-top: 1vw;">Details:</h4>
           <div class="container-fluid" style="display: flex;">
@@ -244,11 +245,21 @@
 <div class="container-fluid" id="review-section" style="background-color: #E6F6EC;">
   <div class="row row-cols-2" style="padding-left: 3rem; padding-top: 3vw;">
     <div class="col-6">
-      <h4>Product Reviews (<?php  ?>)</h4>
+      <h4 style="font-family: 'Barlow', sans-serif; margin-left: 10%;">Product Reviews</h4>
     </div>
     <div class="col-6">
-
+      <button class="btn rounded-pill" style="float: right; margin-right: 1vw; background-color: white;" onclick="writeReviewVisibility()">Write A Review</button>
     </div>
+  </div>
+  <div class="container text-center my-5" id="reviewBoxContainer" style="display: none;">
+    <form action="javascript:void(0);">
+      <textarea name="Write A Review" onkeyup="updateCharCount();" id="writeReviewArea" class="w-100 "></textarea>
+      <div style="float: right;">
+        <p id="charMsgLength">0 / 255</p>
+        <button id="sendReviewButton" onclick="postReview();">Post Review</button>
+      </div>
+      
+    </form>
   </div>
   <div class="container-fluid" style="padding-top: 2vw; padding-bottom: 2vw;">
     <?php
@@ -256,8 +267,8 @@
       {
         echo <<<HTML
         <div class="container-fluid">
-          <h6 style="font-weight: bold; padding-left: 3rem;">Anonymous</h6>
-          <p style="padding-left: 3rem;">$value</p>
+          <h6 style="font-weight: bold; margin-left: 8%;">Anonymous</h6>
+          <p style="margin-left: 8%;">$value</p>
         </div>
         HTML;
       }

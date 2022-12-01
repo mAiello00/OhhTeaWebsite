@@ -4,6 +4,8 @@
 //Then show the next question
 //Once all of the questions have been answered, display the recommended products
 
+//Need to manually add elements from the database to these json files in order for them
+//to be part of the quiz
 var selections = [];
 var talliedProducts = [];
 
@@ -365,13 +367,44 @@ function convertToArray()
     showProductsSortedOrder();
 }
 
+//Tallied products is already in sorted order - so wo go through them in order with this loop
 function showProductsSortedOrder(){
-    //Tallied products is already in sorted order - so wo go through them in order with this loop
-    for(var key in talliedProducts){
-        var name = productsTally[key][1];
-        var displayItems = document.getElementsByClassName("quiz-product-item");
-        
-    }
+    //We have an array of each of the hidden products
+    var displayItems = document.getElementsByClassName("quiz-product-item");
+    //Get an array of the chld nodes of the first element of the hidden products
+    var cNodes = displayItems[0].childNodes;
+    //Gets the text from h5 in the card-body
+    var divChildren = cNodes[3].childNodes;
+    //Get the clone container
+    var cloneContainer = document.getElementById("shop-items-clone-rows");
+    
+    for(var i = 0; i < talliedProducts.length; i++){
+        let obj = talliedProducts[i];
+        console.log(obj["pName"]);
+        console.log(obj["pTally"]);
+        var currName = obj["pName"];
+
+        //Now we go through the hidden items until we find a match
+        //Once we do we display the item and break out of this loop so we can 
+        //continue to the next item in the talliedProducts array
+        for(var j = 0; j < displayItems.length; j++){
+            //Get the child nodes of the current product
+            var cNodes = displayItems[j].childNodes;
+            //Get the child nodes of that child (now working with the card-body children)
+            var divChildren = cNodes[3].childNodes;
+            //Get the name of the product for that card (h5 from the card-body)
+            var currentProductName = divChildren[1].innerText;
+            
+            //If we get a match, then clone the main item and place it in the shop-items-clone container
+            if(currentProductName == currName){
+                var itemClone = displayItems[j].cloneNode(true);
+                cloneContainer.append(itemClone);
+                itemClone.style.display = "flex";
+                //displayItems[j].style.display = "flex";
+                break;
+            }
+        }
+    }   
 }
 
 //
