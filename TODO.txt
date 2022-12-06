@@ -1,7 +1,7 @@
-get inspired links to the instagram page 
+*Get-Inspired links to the instagram page 
 
-Use the substring algorithm you learned last year when searching for products by name
-space out the buttons on the shop page 
+* Use the substring algorithm you learned last year when searching for products by name
+* Space out the buttons on the shop page 
 
 *Find Fonts
     - shop item page
@@ -10,7 +10,4 @@ space out the buttons on the shop page
     - returns exchanges page
     - about us page
 
-* add a forbidden words table to the database (for the reviews section)
-* append the new review to the json column in the 
-
-* each size needs a separate entry in the database
+* Add a forbidden words table to the database (for the reviews section)
